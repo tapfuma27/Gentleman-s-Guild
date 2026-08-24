@@ -1866,3 +1866,310 @@ h2 {
     padding-right: 10px;
   }
 }
+
+/* ================================
+   About Page
+================================ */
+
+.about-hero {
+  padding: 140px 0;
+
+  background:
+    radial-gradient(
+      circle at 80% 40%,
+      rgba(185, 151, 92, 0.13),
+      transparent 35%
+    ),
+    var(--navy);
+}
+
+.about-hero-content {
+  max-width: 950px;
+}
+
+.about-hero h1 {
+  max-width: 850px;
+  margin: 0 0 30px;
+
+  color: var(--cream);
+
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  line-height: 0.98;
+}
+
+.about-hero-content > p:not(.section-label) {
+  max-width: 700px;
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+
+/* Story */
+
+.about-story {
+  padding: 120px 0;
+
+  background: var(--cream);
+  color: var(--navy);
+}
+
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 100px;
+}
+
+.about-story-copy p {
+  margin: 0 0 24px;
+
+  line-height: 1.9;
+}
+
+.about-story-copy p:first-child {
+  font-family: "Playfair Display", serif;
+  font-size: 1.35rem;
+}
+
+
+/* Principles */
+
+.about-principles {
+  padding: 120px 0;
+
+  background: var(--navy);
+}
+
+.about-principles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border-top: 1px solid rgba(185, 151, 92, 0.3);
+  border-left: 1px solid rgba(185, 151, 92, 0.3);
+}
+
+.about-principles-grid article {
+  min-height: 330px;
+  padding: 38px;
+
+  border-right: 1px solid rgba(185, 151, 92, 0.3);
+  border-bottom: 1px solid rgba(185, 151, 92, 0.3);
+}
+
+.about-principles-grid span {
+  color: var(--gold);
+
+  font-family: "Playfair Display", serif;
+  font-size: 0.85rem;
+}
+
+.about-principles-grid h3 {
+  margin: 70px 0 20px;
+
+  color: var(--cream);
+
+  font-size: 1.65rem;
+}
+
+.about-principles-grid p {
+  margin: 0;
+
+  color: var(--muted);
+
+  line-height: 1.8;
+}
+
+
+/* Code of Honor */
+
+.honor-section {
+  padding: 120px 0;
+
+  background: #0a2131;
+}
+
+.honor-heading {
+  margin-bottom: 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 60px;
+}
+
+.honor-heading h2 {
+  color: var(--cream);
+}
+
+.honor-heading > p {
+  max-width: 420px;
+  margin: 0;
+
+  color: var(--muted);
+
+  line-height: 1.8;
+}
+
+.honor-list {
+  border-top: 1px solid rgba(185, 151, 92, 0.3);
+}
+
+.honor-item {
+  padding: 34px 0;
+
+  display: grid;
+  grid-template-columns: 80px 0.8fr 1.2fr;
+  gap: 30px;
+  align-items: start;
+
+  border-bottom: 1px solid rgba(185, 151, 92, 0.3);
+}
+
+.honor-item > span {
+  color: var(--gold);
+
+  font-family: "Playfair Display", serif;
+  font-size: 0.85rem;
+}
+
+.honor-item h3 {
+  margin: 0;
+
+  color: var(--cream);
+
+  font-size: 1.35rem;
+}
+
+.honor-item p {
+  max-width: 620px;
+  margin: 0;
+
+  color: var(--muted);
+
+  line-height: 1.8;
+}
+
+
+/* Quote */
+
+.about-quote {
+  padding: 140px 0;
+
+  background: var(--cream);
+  color: var(--navy);
+}
+
+.about-quote-content {
+  max-width: 950px;
+}
+
+.about-quote blockquote {
+  max-width: 900px;
+
+  margin: 25px 0 0;
+
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.1rem, 5vw, 4rem);
+  line-height: 1.25;
+}
+
+
+/* Closing */
+
+.about-closing {
+  padding: 130px 0;
+
+  background: var(--navy);
+}
+
+.about-closing-content {
+  max-width: 800px;
+
+  text-align: center;
+}
+
+.about-closing-content .section-label {
+  text-align: center;
+}
+
+.about-closing-content h2 {
+  margin-bottom: 25px;
+
+  color: var(--cream);
+}
+
+.about-closing-content > p:not(.section-label) {
+  max-width: 600px;
+  margin: 0 auto;
+
+  color: var(--muted);
+
+  line-height: 1.8;
+}
+
+
+/* About Responsive */
+
+@media (max-width: 900px) {
+  .about-story-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .honor-item {
+    grid-template-columns: 55px 1fr;
+  }
+
+  .honor-item p {
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 90px 0;
+  }
+
+  .about-story,
+  .about-principles,
+  .honor-section {
+    padding: 80px 0;
+  }
+
+  .about-quote,
+  .about-closing {
+    padding: 90px 0;
+  }
+
+  .about-principles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-principles-grid article {
+    min-height: auto;
+  }
+
+  .about-principles-grid h3 {
+    margin-top: 45px;
+  }
+
+  .honor-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .honor-item {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .honor-item p {
+    grid-column: auto;
+  }
+}
