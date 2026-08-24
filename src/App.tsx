@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Welcome from "./pages/Welcome";
 import Services from "./pages/Services";
 import Articles from "./pages/Articles";
+import Article from "./pages/Article";
 import FAQ from "./pages/FAQ";
 import About from "./pages/About";
 
@@ -14,6 +15,7 @@ function App() {
       <Route path="/welcome" element={<Welcome />} />
       <Route path="/services" element={<Services />} />
       <Route path="/articles" element={<Articles />} />
+      <Route path="/articles/:slug" element={<Article />} />
       <Route path="/faq" element={<FAQ />} />
       <Route path="/about" element={<About />} />
     </Routes>

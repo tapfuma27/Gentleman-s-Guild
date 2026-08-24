@@ -1,64 +1,10 @@
 import { Link } from "react-router-dom";
 
+import { articles } from "../data/articles";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const articles = [
-  {
-    id: 1,
-    category: "Leadership",
-    title: "The Modern Gentleman",
-    excerpt:
-      "What does it mean to carry yourself with character, responsibility and purpose in the modern world?",
-    date: "August 2026",
-    slug: "modern-gentleman",
-  },
-  {
-    id: 2,
-    category: "Growth",
-    title: "Building Discipline",
-    excerpt:
-      "Motivation comes and goes. Discipline is what allows meaningful progress to continue when motivation disappears.",
-    date: "August 2026",
-    slug: "building-discipline",
-  },
-  {
-    id: 3,
-    category: "Brotherhood",
-    title: "The Value of Your Circle",
-    excerpt:
-      "The people around you influence your standards, ambitions and ultimately the man you become.",
-    date: "August 2026",
-    slug: "value-of-your-circle",
-  },
-  {
-    id: 4,
-    category: "Career",
-    title: "Building a Professional Reputation",
-    excerpt:
-      "Your reputation is built long before you enter the room. Learn how consistency, competence and character shape professional credibility.",
-    date: "August 2026",
-    slug: "professional-reputation",
-  },
-  {
-    id: 5,
-    category: "Mindset",
-    title: "Choosing the Difficult Path",
-    excerpt:
-      "Comfort feels good in the short term, but meaningful development often begins when we deliberately choose the harder option.",
-    date: "August 2026",
-    slug: "difficult-path",
-  },
-  {
-    id: 6,
-    category: "Lifestyle",
-    title: "Standards in the Small Things",
-    excerpt:
-      "How you dress, speak, arrive and follow through may seem small, but together they reveal the standards you live by.",
-    date: "August 2026",
-    slug: "standards-small-things",
-  },
-];
+
 
 function Articles() {
   return (
