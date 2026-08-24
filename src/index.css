@@ -30,6 +30,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 button,
 input,
 textarea,
@@ -581,17 +586,17 @@ h2 {
 ================================ */
 
 .site-footer {
-  padding-top: 70px;
+  padding-top: 55px;
 
   background: #04111a;
 
-  border-top: 1px solid rgba(185, 151, 92, 0.25);
+  border-top: 1px solid rgba(185, 151, 92, 0.3);
 }
 
 .footer-container {
   width: min(90%, var(--container-width));
 
-  margin: 0 auto 60px;
+  margin: 0 auto 45px;
 
   display: flex;
   justify-content: space-between;
@@ -606,8 +611,8 @@ h2 {
 }
 
 .footer-logo {
-  width: 65px;
-  height: 65px;
+  width: 70px;
+  height: 70px;
 
   object-fit: contain;
 }
@@ -617,7 +622,7 @@ h2 {
 
   color: var(--cream);
 
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .footer-brand p {
@@ -625,26 +630,36 @@ h2 {
 
   color: var(--muted);
 
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 }
 
 .footer-links {
   display: flex;
-  gap: 24px;
-
-  color: var(--muted);
-
-  font-size: 0.8rem;
+  align-items: center;
+  gap: 28px;
 }
 
-.footer-links a:hover {
+.footer-links a,
+.footer-links a:visited {
+  color: var(--cream);
+  text-decoration: none;
+
+  font-size: 0.85rem;
+  font-weight: 500;
+
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover,
+.footer-links a:focus,
+.footer-links a:active {
   color: var(--gold);
 }
 
 .footer-bottom {
   padding: 22px 5%;
 
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(185, 151, 92, 0.2);
 
   text-align: center;
 }
@@ -652,11 +667,10 @@ h2 {
 .footer-bottom p {
   margin: 0;
 
-  color: rgba(201, 199, 194, 0.6);
+  color: rgba(201, 199, 194, 0.65);
 
   font-size: 0.7rem;
 }
-
 /* ================================
    Homepage Responsive
 ================================ */
