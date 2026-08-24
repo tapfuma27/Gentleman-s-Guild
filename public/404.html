@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Gentlemen's Guild</title>
+
+    <script>
+      const path = window.location.pathname;
+      const search = window.location.search;
+
+      sessionStorage.setItem(
+        "redirectPath",
+        path + search
+      );
+
+      window.location.replace("/");
+    </script>
+  </head>
+
+  <body></body>
+</html>
