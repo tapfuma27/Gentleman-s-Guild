@@ -8,6 +8,9 @@ import Article from "./pages/Article";
 import FAQ from "./pages/FAQ";
 import About from "./pages/About";
 
+import NotFound from "./pages/NotFound";
+
+
 function App() {
   return (
     <Routes>
@@ -18,6 +21,7 @@ function App() {
       <Route path="/articles/:slug" element={<Article />} />
       <Route path="/faq" element={<FAQ />} />
       <Route path="/about" element={<About />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
