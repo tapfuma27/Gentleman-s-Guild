@@ -126,9 +126,13 @@ function Home() {
                   mean for men today.
                 </p>
 
-                <Link to="/articles" className="article-link">
+                <Link 
+                to="/articles/modern-gentleman"
+                className="article-link"
+                >
                   Read Article →
                 </Link>
+                
               </article>
 
               <article className="article-card">
@@ -141,7 +145,10 @@ function Home() {
                   meaningful personal growth.
                 </p>
 
-                <Link to="/articles" className="article-link">
+                <Link 
+                to="/articles/building-discipline"
+                className="article-link"
+                >
                   Read Article →
                 </Link>
               </article>
@@ -156,7 +163,10 @@ function Home() {
                   and ultimately the man you become.
                 </p>
 
-                <Link to="/articles" className="article-link">
+                <Link 
+                to="/articles/value-of-your-circle"
+                className="article-link"
+                >
                   Read Article →
                 </Link>
               </article>
