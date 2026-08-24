@@ -85,7 +85,7 @@ function Articles() {
 
                   <div>
                     <h3>{article.title}</h3>
-                    <p>{article.excerpt}</p>
+                    <p>{article.introduction}</p>
                   </div>
 
                   <div className="article-card-bottom">
